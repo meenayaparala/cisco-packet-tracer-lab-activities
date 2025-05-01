@@ -2,7 +2,7 @@
 📸 Screenshot  
 Below is the screenshot of the basic switch configuration setup:  
 
-![Basic Switch Configuration](screenshots/switch-setup.png)  
+![Basic Switch Configuration](static-ip-screenshot.png)  
 Static IP addressing is a method of manually assigning IP addresses to devices in a network. This lab demonstrates how to configure static IP addresses for two PCs connected via a switch and verify their connectivity using ping commands.
 
 Path: 01-Basic-Networking/02-Static-IP.pkt  
