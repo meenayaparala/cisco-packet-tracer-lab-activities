@@ -1,24 +1,41 @@
-🖧 PC-to-PC Communication using Cisco Packet Tracer
-This project demonstrates a basic PC-to-PC communication setup using Cisco Packet Tracer. It is useful for beginners who want to understand fundamental networking concepts such as IP configuration and ping testing.
+🧪 Lab 1: PC-to-PC Communication  
 
-📁 Files Included:
-- `01-PC-to-PC.pkt` – Packet Tracer file showcasing direct communication between two PCs.
+PC-to-PC communication is the simplest form of networking where two PCs are directly connected using a cross-over cable. This lab demonstrates how to configure static IP addresses for two PCs and verify their connectivity using ping commands.
 
-🛠️ Configuration Details:
-1. Two end devices (PC0 and PC1).
-2. Direct connection using a copper cross-over cable.
-3. Static IP configuration:
-   - PC3: `10.0.2.3/24`
-   - PC4: `10.0.2.4/24`
-4. Successful ping test to verify communication.
+Path: 01-Basic-Networking/01-PC-to-PC-Communication/01-PC-to-PC.pkt  
+Objective: Establish direct communication between two PCs using static IP addressing.
 
-📌 Steps to Run:
-1. Open Cisco Packet Tracer.
-2. Load the file `01-PC-to-PC.pkt`.
-3. Open each PC and check IP configuration:
-   - Go to **Desktop > IP Configuration**.
-4. Use the command prompt to ping the other PC and test the connection:
-   - Example: `ping 10.0.2.4` from PC3 to pc4.
+🛠️ Topology Overview  
+| Device   | Quantity | Ports Used          |
+|----------|----------|---------------------|
+| PC       | 2        | FastEthernet0       |
+| Cable    | 1        | Copper Cross-over   |
+
+⚙️ IP Configuration  
+| Device | IP Address      | Subnet Mask      | Default Gateway |
+|--------|-----------------|------------------|-----------------|
+| PC0    | 10.0.4.3        | 255.255.255.0    | (optional)      |
+| PC1    | 10.0.4.4        | 255.255.255.0    | (optional)      |
+
+🪛 Step-by-Step Instructions  
+1. Launch Cisco Packet Tracer and open `01-PC-to-PC.pkt`.  
+2. Add Devices:  
+   - Drag 2 PCs to the workspace.  
+3. Connect Devices:  
+   - Use a Copper Cross-over cable.  
+   - PC0 → PC1 (FastEthernet0 ports).  
+4. Assign IP Addresses:  
+   - On PC0:  
+     - Go to **Desktop > IP Configuration**.  
+     - Set IP: `10.0.4.3`, Subnet Mask: `255.255.255.0`.  
+   - On PC1:  
+     - Set IP: `10.0.4.4`, Subnet Mask: `255.255.255.0`.  
+
+Verify using Command Prompt:  
+- On PC0:  
+  ```plaintext
+  ping 10.0.4.4
+```
 
 💡 Learning Outcomes:
 - Understand basic IP addressing.
