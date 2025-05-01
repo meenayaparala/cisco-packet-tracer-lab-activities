@@ -1,3 +1,5 @@
+![Logo](logo.png) <!-- Replace 'assets/logo.png' with the actual path to your image -->
+
 Cisco Packet Tracer Lab Activities
 I have created 26 practical lab activities using Cisco Packet Tracer. These exercises cover a wide range of networking topics, from basic to advanced, and are ideal for anyone looking to deepen their understanding of networking concepts, particularly for those preparing for CCNA certification.
 
