@@ -1,4 +1,8 @@
 🧪 Lab 1: PC-to-PC Communication  
+📸 Screenshot  
+Below is the screenshot of the PC-to-PC communication setup:  
+
+![PC-to-PC Communication](screenshots/pc-to-pc-setup.png)  
 
 PC-to-PC communication is the simplest form of networking where two PCs are directly connected using a cross-over cable. This lab demonstrates how to configure static IP addresses for two PCs and verify their connectivity using ping commands.
 
