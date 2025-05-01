@@ -1,5 +1,4 @@
 🧪 Lab 1: PC-to-PC Communication  
-![pc-to-pc-screenshot](pc-to-pc-screenshot.png)
 📸 Screenshot  
 Below is the screenshot of the PC-to-PC communication setup:  
 
