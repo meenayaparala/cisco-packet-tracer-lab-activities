@@ -1,0 +1,27 @@
+🖧 PC-to-PC Communication using Cisco Packet Tracer
+This project demonstrates a basic PC-to-PC communication setup using Cisco Packet Tracer. It is useful for beginners who want to understand fundamental networking concepts such as IP configuration and ping testing.
+
+📁 Files Included:
+- `01-PC-to-PC.pkt` – Packet Tracer file showcasing direct communication between two PCs.
+
+🛠️ Configuration Details:
+1. Two end devices (PC0 and PC1).
+2. Direct connection using a copper cross-over cable.
+3. Static IP configuration:
+   - PC3: `10.0.2.3/24`
+   - PC4: `10.0.2.4/24`
+4. Successful ping test to verify communication.
+
+📌 Steps to Run:
+1. Open Cisco Packet Tracer.
+2. Load the file `01-PC-to-PC.pkt`.
+3. Open each PC and check IP configuration:
+   - Go to **Desktop > IP Configuration**.
+4. Use the command prompt to ping the other PC and test the connection:
+   - Example: `ping 10.0.2.4` from PC3 to pc4.
+
+💡 Learning Outcomes:
+- Understand basic IP addressing.
+- Learn how to use Packet Tracer for simulations.
+- Get hands-on experience with PC-to-PC connectivity without a switch or router.
+
