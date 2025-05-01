@@ -5,9 +5,9 @@ I have created 26 practical lab activities using Cisco Packet Tracer. These exer
 
 📘 Activities Overview
 
-| No. | Activity Name                  | Folder                        | File Name                          |
-|-----|--------------------------------|-------------------------------|------------------------------------|
-| 1   | PC-to-PC Communication         | 01-Basic-Networking           | 01-PC-to-PC.pkt                   |
+| No. | Activity Name                  | Folder                        | Sub Folder Name                   |
+|-----|--------------------------------|-------------------------------|-----------------------------------|
+| 1   | PC-to-PC Communication         | 01-Basic-Networking           | 01-PC-to-PC-communication         |
 | 2   | Static IP Addressing           | 01-Basic-Networking           | 02-Static-IP.pkt                  |
 | 3   | Basic Switch Configuration     | 01-Basic-Networking           | 03-Switch-Config.pkt              |
 | 4   | Router Initial Setup           | 01-Basic-Networking           | 04-Router-Setup.pkt               |
