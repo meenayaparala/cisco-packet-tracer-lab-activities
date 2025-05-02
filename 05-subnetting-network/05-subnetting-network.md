@@ -87,4 +87,4 @@ Verify that the router interfaces are enabled (no shutdown).
 Set the correct default gateways on all PCs.
 This setup uses manual IP assignment. For dynamic IPs, consider using DHCP.
 📸 Screenshot:
-![Logo](05-subnet-networking-image.png)
+![Logo](05-subnet-network-image.png)
