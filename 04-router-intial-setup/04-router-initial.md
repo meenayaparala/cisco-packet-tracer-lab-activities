@@ -1,125 +1,124 @@
-Thanks! Here's the complete `README.md` content for the **04-Router-Setup.pkt** lab, including the uploaded screenshot:
+This project demonstrates how to connect **two different IP networks** using a **Cisco router**, enabling communication between two PCs in separate subnets. The configuration is done entirely through the **Graphical User Interface (GUI)** of **Cisco Packet Tracer**, with no command-line (CLI) used.
 
 ---
-
-```markdown
-# 🧪 Lab 4: Router Initial Setup
 
 ## 🎯 Objective
-To enable communication between two PCs on different networks through a **router** using static IP addressing.
+
+- Set up two different subnets.
+- Connect both networks via a router using GUI-based configuration.
+- Enable successful communication (ping/message) between the two PCs.
 
 ---
 
-## 🗂️ File
-`04-Router-Setup.pkt`
+## 🧰 Devices Used
+
+| Device | Type            |
+|--------|-----------------|
+| Router | Cisco 2901      |
+| PC0    | 192.168.10.2     |
+| PC1    | 192.168.20.2     |
+| Cables | Copper Straight-Through (x2) |
 
 ---
 
-## 🧱 Topology
+## 🖼️ Network Topology
 
 ```
 
-PC0 -------- Router -------- PC1
+PC0 (192.168.10.2) <---> Router 2901 <---> PC1 (192.168.20.2)
 
 ````
 
-- **PC0:** 192.168.10.2/24
-- **PC1:** 192.168.20.2/24
-- **Router:**
-  - G0/0 → 192.168.10.1/24
-  - G0/1 → 192.168.20.1/24
+📸 **Screenshot of Setup in Cisco Packet Tracer:**
+
+![Network Topology Screenshot](04-router-setup-topology.png)
+
+---
+---
+
+## ⚙️ IP Configuration Details
+
+| Device | Interface          | IP Address     | Subnet Mask       | Default Gateway  |
+|--------|--------------------|----------------|--------------------|------------------|
+| Router | GigabitEthernet0/0 | 192.168.1.1    | 255.255.255.0      | -                |
+| Router | GigabitEthernet0/1 | 192.168.2.1    | 255.255.255.0      | -                |
+| PC1    | FastEthernet0      | 192.168.1.10   | 255.255.255.0      | 192.168.1.1      |
+| PC2    | FastEthernet0      | 192.168.2.10   | 255.255.255.0      | 192.168.2.1      |
 
 ---
 
-## ⚙️ Step-by-Step Configuration
+## 🔧 Configuration Steps (GUI Only)
 
-### 🔌 1. Create Topology
-- Add:
-  - 2 PCs
-  - 1 Router (e.g., Cisco 2901)
+### 🔹 Step 1: Connect Devices
 - Use **copper straight-through cables**:
   - PC0 → Router G0/0
   - PC1 → Router G0/1
 
----
+### 🔹 Step 2: Configure Router Interfaces
+1. Click on the router → **Config** tab.
+2. Under **GigabitEthernet0/0**:
+   - Turn **Port Status: On**
+   - IP Address: `192.168.10.1`
+   - Subnet Mask: `255.255.255.0`
+3. Under **GigabitEthernet0/1**:
+   - Turn **Port Status: On**
+   - IP Address: `192.168.20.1`
+   - Subnet Mask: `255.255.255.0`
 
-### 💻 2. PC Configuration
+### 🔹 Step 3: Configure PCs
 
-#### PC0
+#### PC0:
 - IP Address: `192.168.10.2`
 - Subnet Mask: `255.255.255.0`
 - Default Gateway: `192.168.10.1`
 
-#### PC1
+#### PC1:
 - IP Address: `192.168.20.2`
 - Subnet Mask: `255.255.255.0`
 - Default Gateway: `192.168.20.1`
 
 ---
 
-### 🌐 3. Router Configuration
+## ✅ Testing
 
-1. Enter CLI → `no` for initial dialog
-2. Enter global config mode:
-   ```bash
-   Router> enable
-   Router# configure terminal
-   Router(config)# hostname Router
-````
-
-3. Configure G0/0:
-
-   ```bash
-   Router(config)# interface gigabitEthernet 0/0
-   Router(config-if)# ip address 192.168.10.1 255.255.255.0
-   Router(config-if)# no shutdown
-   Router(config-if)# exit
-   ```
-
-4. Configure G0/1:
-
-   ```bash
-   Router(config)# interface gigabitEthernet 0/1
-   Router(config-if)# ip address 192.168.20.1 255.255.255.0
-   Router(config-if)# no shutdown
-   Router(config-if)# exit
-   Router(config)# end
-   ```
-
----
-
-## 🧪 4. Testing Connectivity
-
-1. Open **PC0 → Command Prompt**
-
+### Ping from PC0 to PC1:
+1. Click on **PC0** → Desktop → **Command Prompt**.
+2. Type:
    ```bash
    ping 192.168.20.2
-   ```
-2. Open **PC1 → Command Prompt**
+````
 
-   ```bash
-   ping 192.168.10.2
-   ```
+3. If successful, the connection is working across subnets via router.
 
-✅ If configured correctly, both PCs should reply successfully.
+### Optional: Use **Simple PDU Tool**
 
----
-
-## 📸 Screenshot
-
-![Router Setup Topology](04-router-setup-topology.png)
+* Send a test message from PC0 to PC1 using the envelope icon.
 
 ---
 
-## 🧠 Notes
+## 🧠 Key Takeaways
 
-* Routers are **mandatory** for communication between devices on different networks.
-* Each interface must be configured with an IP in its respective subnet.
-* If the router isn't configured or powered on, PCs in different networks won't communicate.
+* Understand the role of routers in connecting separate subnets.
+* Learn to configure basic inter-network routing using GUI only.
+* Gain familiarity with subnetting, static IPs, and default gateways.
 
 ---
+
+## 📁 Files Included
+
+* `04-router-setup.pkt` – Cisco Packet Tracer project file
+* `README.md` – Project documentation
+
+---
+
+
+## 📝 License
+
+This project is open-source and available for learning and demonstration purposes.
 
 ```
 
-Let me know if you'd like to include CLI command outputs (like ping replies) or want me to rename/move the screenshot into the correct repo structure (e.g., `assets/screenshots/04-router-setup-topology.png`).
+---
+
+Let me know if you'd like the `.md` file directly, or want to add a downloadable `.pkt` link as well!
 ```
