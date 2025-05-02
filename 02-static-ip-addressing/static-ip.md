@@ -2,11 +2,7 @@
 📸 Screenshot  
 Below is the screenshot of the basic switch configuration setup:  
 
-<<<<<<< HEAD
 ![Basic Switch Configuration](static-ip-screenshot.png)  
-=======
-![Basic Switch Configuration](C:\Users\yapar\OneDrive\Desktop\cisco-packet-tracer-lab-activities\static-ip-screenshot.png)  
->>>>>>> d1c44ac (Added screenshots and updated references in pc-to-pc.txt and basics-switch.txt)
 Static IP addressing is a method of manually assigning IP addresses to devices in a network. This lab demonstrates how to configure static IP addresses for two PCs connected via a switch and verify their connectivity using ping commands.
 
 Path: 01-Basic-Networking/02-Static-IP.pkt  
