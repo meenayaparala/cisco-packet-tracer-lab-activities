@@ -35,6 +35,11 @@ In this lab, the following steps were taken:
 
 4. **Saved the Configuration** to ensure that the settings persist after reboot:
    - Running configuration saved to startup configuration.
+     📸 **Screenshot of Setup in Cisco Packet Tracer:**
+
+![basic switch Screenshot](03-basic-switch-config-img.png)
+
+---
 
 ## Required CLI Commands
 
