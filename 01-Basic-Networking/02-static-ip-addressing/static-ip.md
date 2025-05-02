@@ -3,7 +3,7 @@
 Below is the screenshot of the basic switch configuration setup:  
 
 <<<<<<< HEAD
-![Basic Switch Configuration](cisco-packet-tracer-lab-activities\static-ip-screenshot.png)  
+![Basic Switch Configuration](static-ip-screenshot.png)  
 =======
 ![Basic Switch Configuration](C:\Users\yapar\OneDrive\Desktop\cisco-packet-tracer-lab-activities\static-ip-screenshot.png)  
 >>>>>>> d1c44ac (Added screenshots and updated references in pc-to-pc.txt and basics-switch.txt)
