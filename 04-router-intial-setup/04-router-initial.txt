@@ -107,7 +107,7 @@ PC0 -------- Router -------- PC1
 
 ## 📸 Screenshot
 
-![Router Setup Topology](../assets/screenshots/04-router-setup-topology.png)
+![Router Setup Topology](04-router-setup-topology.png)
 
 ---
 
