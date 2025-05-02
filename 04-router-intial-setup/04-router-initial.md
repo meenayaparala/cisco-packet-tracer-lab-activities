@@ -46,7 +46,6 @@ PC0 (192.168.10.2) <---> Router 2901 <---> PC1 (192.168.20.2)
 | PC2    | FastEthernet0      | 192.168.2.10   | 255.255.255.0      | 192.168.2.1      |
 
 ---
-
 ## 🔧 Configuration Steps (GUI Only)
 
 ### 🔹 Step 1: Connect Devices
